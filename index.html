@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muhammad Haseeb | Web Developer</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Muhammad Haseeb, a web developer and BSIT student focused on building modern, responsive, and user-friendly web experiences."
+    >
+
+    <meta name="author" content="Muhammad Haseeb">
+    <meta name="theme-color" content="#0B0D0F">
+
+    <meta property="og:title" content="Muhammad Haseeb | Web Developer">
+    <meta
+        property="og:description"
+        content="Web Developer and BSIT student building modern and responsive web experiences."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem("portfolio-theme");
+            const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+            const theme = savedTheme || (systemDark ? "dark" : "light");
+
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- =========================
+         PAGE LOADER
+    ========================== -->
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-line"></div>
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo" aria-label="Muhammad Haseeb Home">
+                MH<span>.</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <button
+                    class="theme-toggle mobile-theme-toggle"
+                    id="mobileThemeToggle"
+                    type="button"
+                    aria-label="Toggle color theme"
+                >
+                    <span class="theme-icon">☾</span>
+                </button>
+
+            </div>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Toggle color theme"
+                >
+                    <span class="theme-icon">☾</span>
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navMenu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-grid container">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        AVAILABLE FOR OPPORTUNITIES
+                    </div>
+
+                    <p class="eyebrow">WEB DEVELOPER</p>
+
+                    <h1>
+                        Building
+                        <span>modern digital</span>
+                        experiences for the web.
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm Muhammad Haseeb, a Web Developer and BSIT
+                        student focused on building responsive, functional,
+                        and user-friendly websites and web applications.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                            <span>↗</span>
+                        </a>
+
+                        <a
+                            href="assets/Muhammad-Haseeb-Resume.pdf"
+                            class="btn btn-secondary"
+                            download
+                        >
+                            Download Resume
+                            <span>↓</span>
+                        </a>
+
+                    </div>
+
+                    <a href="#contact" class="work-link">
+                        Let's work together
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="hero-visual reveal">
+
+                    <div class="hero-grid-pattern"></div>
+
+                    <div class="profile-frame">
+
+                        <div class="profile-number">01</div>
+
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Muhammad Haseeb -Web Developer"
+                            class="profile-image"
+                        >
+
+                        <div class="profile-label">
+                            <span>BASED IN</span>
+                            <strong>PAKISTAN</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-tech tech-one">HTML</div>
+                    <div class="floating-tech tech-two">CSS</div>
+                    <div class="floating-tech tech-three">JS</div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                SCROLL TO EXPLORE
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="section-number">01 / ABOUT</p>
+
+                        <h2>
+                            Turning ideas into
+                            <span>useful experiences.</span>
+                        </h2>
+                    </div>
+
+                    <p class="section-intro">
+                        A developer focused on learning through practical
+                        projects and continuously improving frontend skills.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text reveal">
+
+                        <p>
+                            I am Muhammad Haseeb, a BSIT student and aspiring
+                            web developer focused on building modern,
+                            responsive, and user-friendly web experiences.
+                        </p>
+
+                        <p>
+                            I enjoy working with HTML, CSS, and JavaScript to
+                            turn ideas into functional websites and
+                            interactive applications.
+                        </p>
+
+                        <p>
+                            I am continuously improving my programming
+                            fundamentals, frontend development skills, and
+                            problem-solving abilities through practical
+                            projects.
+                        </p>
+
+                        <p>
+                            My current goal is to become a skilled web
+                            developer by building real projects,
+                            strengthening my fundamentals, and gaining
+                            practical development experience.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-info reveal">
+
+                        <div class="info-row">
+                            <span>Name</span>
+                            <strong>Muhammad Haseeb</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Role</span>
+                            <strong>Web Developer</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Education</span>
+                            <strong>BSIT Student</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Location</span>
+                            <strong>Pakistan</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Focus</span>
+                            <strong>Web Development</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="section-number">02 / SKILLS</p>
+
+                        <h2>
+                            Tools I use to
+                            <span>build for the web.</span>
+                        </h2>
+                    </div>
+
+                    <p class="section-intro">
+                        Technologies and tools I currently work with while
+                        developing my frontend and programming skills.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-category reveal">
+
+                        <span class="skill-index">01</span>
+
+                        <h3>Frontend Development</h3>
+
+                        <div class="skill-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Web Design</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-category reveal">
+
+                        <span class="skill-index">02</span>
+
+                        <h3>Programming & Development</h3>
+
+                        <div class="skill-list">
+                            <span>JavaScript</span>
+                            <span>PHP — Basic</span>
+                            <span>Python — Basic</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-category reveal">
+
+                        <span class="skill-index">03</span>
+
+                        <h3>Database Fundamentals</h3>
+
+                        <div class="skill-list">
+                            <span>MySQL</span>
+                            <span>Database Concepts</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-category reveal">
+
+                        <span class="skill-index">04</span>
+
+                        <h3>Tools</h3>
+
+                        <div class="skill-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Visual Studio Code</span>
+                            <span>Android Studio</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="section-number">03 / PROJECTS</p>
+
+                        <h2>
+                            Selected work &
+                            <span>practical projects.</span>
+                        </h2>
+                    </div>
+
+                    <p class="section-intro">
+                        Real projects built while developing my web
+                        development skills.
+                    </p>
+
+                </div>
+
+
+                <div class="project-filters reveal">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="ecommerce">
+                        E-Commerce
+                    </button>
+
+                    <button class="filter-btn" data-filter="javascript">
+                        JavaScript
+                    </button>
+
+                    <button class="filter-btn" data-filter="webapps">
+                        Web Applications
+                    </button>
+
+                    <button class="filter-btn" data-filter="management">
+                        Management Systems
+                    </button>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 01 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="ecommerce"
+                    >
+
+                        <div class="project-preview preview-store">
+
+                            <div class="preview-top">
+                                <span>PURE</span>
+                                <span>NATURALS</span>
+                            </div>
+
+                            <div class="preview-product">
+                                <div class="bottle"></div>
+
+                                <div class="product-lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <span class="preview-label">
+                                NATURAL CARE
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span>01</span>
+                                <span>E-COMMERCE FRONTEND</span>
+                            </div>
+
+                            <h3>Pure Naturals Store</h3>
+
+                            <p>
+                                A responsive e-commerce frontend for a natural
+                                hair and skincare products store, featuring
+                                product displays, shopping cart functionality,
+                                and an interactive shopping experience.
+                            </p>
+
+                            <div class="tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://haseebumar.github.io/pure-naturals-store/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    Live Demo ↗
+                                </a>
+
+                                <a
+                                    href="https://github.com/HaseebUmar"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link secondary-link"
+                                >
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 02 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="javascript"
+                    >
+
+                        <div class="project-preview preview-game">
+
+                            <div class="game-board">
+
+                                <span>X</span>
+                                <span></span>
+                                <span>O</span>
+
+                                <span></span>
+                                <span>X</span>
+                                <span></span>
+
+                                <span>O</span>
+                                <span></span>
+                                <span>X</span>
+
+                            </div>
+
+                            <div class="game-title">
+                                TIC TAC TOE
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span>02</span>
+                                <span>JAVASCRIPT APPLICATION</span>
+                            </div>
+
+                            <h3>Tic Tac Toe</h3>
+
+                            <p>
+                                An interactive Tic Tac Toe game built with
+                                frontend technologies, demonstrating
+                                JavaScript logic, game interactions, and
+                                dynamic interface updates.
+                            </p>
+
+                            <div class="tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://haseebumar.github.io/tic-tac-toe/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    Live Demo ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 03 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="webapps"
+                    >
+
+                        <div class="project-preview preview-restaurant">
+
+                            <div class="restaurant-window">
+
+                                <div class="restaurant-header">
+                                    <span>MENU</span>
+                                    <span>ORDER</span>
+                                </div>
+
+                                <div class="food-row">
+                                    <div class="food-item"></div>
+                                    <div class="food-item"></div>
+                                    <div class="food-item"></div>
+                                </div>
+
+                                <div class="order-line"></div>
+                                <div class="order-line short"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span>03</span>
+                                <span>RESTAURANT WEB APPLICATION</span>
+                            </div>
+
+                            <h3>Restaurant Ordering Website</h3>
+
+                            <p>
+                                A responsive restaurant ordering website
+                                designed to provide an interactive food
+                                browsing and ordering experience through a
+                                clean interface and frontend functionality.
+                            </p>
+
+                            <div class="tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://haseebumar.github.io/RESTAURANT-ORDERING-WEBSITE/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    Live Demo ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 04 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="management"
+                    >
+
+                        <div class="project-preview preview-dashboard">
+
+                            <div class="dashboard-sidebar">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <div class="dashboard-main">
+
+                                <div class="dashboard-stats">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="dashboard-chart">
+                                    <b></b>
+                                    <b></b>
+                                    <b></b>
+                                    <b></b>
+                                    <b></b>
+                                    <b></b>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-body">
+
+                            <div class="project-meta">
+                                <span>04</span>
+                                <span>BUSINESS MANAGEMENT</span>
+                            </div>
+
+                            <h3>Inventory & Sales Management System</h3>
+
+                            <p>
+                                A frontend inventory and sales management
+                                application designed to manage products,
+                                monitor stock levels, record sales, and track
+                                business activity through an organized
+                                dashboard.
+                            </p>
+
+                            <div class="tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://haseebumar.github.io/Inventory-Sales-Management-System/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVICES
+        ========================== -->
+
+        <section class="section services-section" id="services">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="section-number">04 / SERVICES</p>
+
+                        <h2>
+                            What I can
+                            <span>help build.</span>
+                        </h2>
+                    </div>
+
+                    <p class="section-intro">
+                        Practical frontend services aligned with my current
+                        development skills.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+
+                        <span class="service-number">01</span>
+
+                        <div class="service-icon">↗</div>
+
+                        <h3>Frontend Web Development</h3>
+
+                        <p>
+                            Building responsive and interactive websites using
+                            HTML, CSS, and JavaScript.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <span class="service-number">02</span>
+
+                        <div class="service-icon">⌁</div>
+
+                        <h3>Responsive Website Development</h3>
+
+                        <p>
+                            Creating websites that provide a consistent
+                            experience across desktop, tablet, and mobile.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <span class="service-number">03</span>
+
+                        <div class="service-icon">◈</div>
+
+                        <h3>UI Implementation</h3>
+
+                        <p>
+                            Transforming website layouts and interface
+                            concepts into functional frontend experiences.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <span class="service-number">04</span>
+
+                        <div class="service-icon">↻</div>
+
+                        <h3>Website Maintenance</h3>
+
+                        <p>
+                            Improving existing frontend interfaces, fixing
+                            layout issues, and maintaining website
+                            functionality.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             JOURNEY
+        ========================== -->
+
+        <section class="section journey-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="section-number">05 / JOURNEY</p>
+
+                        <h2>
+                            Still learning.
+                            <span>Still building.</span>
+                        </h2>
+                    </div>
+
+                    <p class="section-intro">
+                        A simple and honest look at my development journey.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-year">2026</div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span>WEB DEVELOPMENT</span>
+
+                            <h3>Building Practical Projects</h3>
+
+                            <p>
+                                Building practical frontend projects,
+                                improving JavaScript fundamentals, and
+                                developing a professional portfolio.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-year">2025</div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span>PROGRAMMING FOUNDATIONS</span>
+
+                            <h3>Learning Through Practice</h3>
+
+                            <p>
+                                Developing programming knowledge and working
+                                on academic and personal development projects.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROCESS
+        ========================== -->
+
+        <section class="section process-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="section-number">06 / PROCESS</p>
+
+                        <h2>
+                            How I approach
+                            <span>development.</span>
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-item reveal">
+                        <span>01</span>
+                        <h3>Understand</h3>
+                        <p>
+                            Understand the requirements and objectives.
+                        </p>
+                    </div>
+
+                    <div class="process-item reveal">
+                        <span>02</span>
+                        <h3>Plan</h3>
+                        <p>
+                            Organize the structure, layout, and functionality.
+                        </p>
+                    </div>
+
+                    <div class="process-item reveal">
+                        <span>03</span>
+                        <h3>Develop</h3>
+                        <p>
+                            Build the website using appropriate technologies.
+                        </p>
+                    </div>
+
+                    <div class="process-item reveal">
+                        <span>04</span>
+                        <h3>Test</h3>
+                        <p>
+                            Check responsiveness, usability, and functionality.
+                        </p>
+                    </div>
+
+                    <div class="process-item reveal">
+                        <span>05</span>
+                        <h3>Improve</h3>
+                        <p>
+                            Refine the website and improve the user experience.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-wrapper">
+
+                    <div class="contact-info reveal">
+
+                        <p class="section-number">07 / CONTACT</p>
+
+                        <h2>
+                            Let's build
+                            <span>something useful.</span>
+                        </h2>
+
+                        <p>
+                            Have a project idea, development opportunity, or
+                            collaboration in mind? Feel free to contact me.
+                        </p>
+
+                        <div class="contact-details">
+
+                            <a href="mailto:m.haseeb.umer@gmail.com">
+                                <small>EMAIL</small>
+                                <strong>m.haseeb.umer@gmail.com</strong>
+                            </a>
+
+                            <a
+                                href="https://github.com/HaseebUmar"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <small>GITHUB</small>
+                                <strong>github.com/HaseebUmar</strong>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form reveal" id="contactForm" novalidate>
+
+                        <div class="form-group">
+
+                            <label for="name">Full Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                autocomplete="name"
+                                required
+                            >
+
+                            <small class="form-error" id="nameError"></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                            <small class="form-error" id="emailError"></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">Subject</label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Project or opportunity"
+                                required
+                            >
+
+                            <small class="form-error" id="subjectError"></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">Message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell me about your idea..."
+                                required
+                            ></textarea>
+
+                            <small class="form-error" id="messageError"></small>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            Create Email Draft
+                            <span>→</span>
+                        </button>
+
+                        <div
+                            class="form-feedback"
+                            id="formFeedback"
+                            role="status"
+                            aria-live="polite"
+                        ></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div>
+
+                    <a href="#home" class="footer-logo">
+                        Muhammad Haseeb<span>.</span>
+                    </a>
+
+                    <p>Junior Web Developer</p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://github.com/HaseebUmar"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub ↗
+                    </a>
+
+                    <a href="mailto:m.haseeb.umer@gmail.com">
+                        Email ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="currentYear"></span> Muhammad Haseeb.
+                    All rights reserved.
+                </span>
+
+                <button
+                    class="back-top"
+                    id="backTop"
+                    type="button"
+                    aria-label="Back to top"
+                >
+                    Back to top ↑
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
